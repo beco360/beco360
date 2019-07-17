@@ -1,0 +1,135 @@
+:root {
+    --color-principal: #4FDDFA;
+    --color-secundary: #6CE2FB;
+    --color-light-gray: #fafafa;
+    --color-dark-grey: #414141;
+    --color-white: white;
+    --color-action: #007bff;
+}
+
+/* ICONOS */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/icons/icomoon.eot?flb6mo');
+    src: url('../assets/icons/icomoon.eot?flb6mo#iefix') format('embedded-opentype'), url('../assets/icons/icomoon.ttf?flb6mo') format('truetype'), url('../assets/icons/icomoon.woff?flb6mo') format('woff'), url('../assets/icons/icomoon.svg?flb6mo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+    content: "\e942";
+    color: black;
+}
+
+.icon-arrow-right:before {
+    font-size: 25px;
+    color: var(--color-principal);
+    content: "\ea3c";
+}
+
+.icon-mail:before {
+    content: "\ea86";
+}
+
+.icon-facebook:before {
+    content: "\ea91";
+    color: #3B60A6;
+    background: white;
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+    color: #C42C65;
+}
+
+.icon-whatsapp:before {
+    content: "\ea93";
+    color: #00D424;
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+    color: #65BBF2;
+}
+
+/* /ICONOS */
+
+#navbar .btn {
+    color: var(--color-action);
+}
+
+.navbar-brand {
+    color: #C0C0C0 !important;
+    font-size: 30px;
+}
+
+#btn-contact .active {
+    color: var(--color-white);
+}
+
+#btn-contact .btn:hover {
+    color: var(--color-white);
+}
+
+#title-services {
+    color: var(--color-dark-grey);
+    margin: 20px 0 10px 0;
+}
+
+.callto-demostration {
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--color-dark-grey);
+    color: var(--color-white);
+}
+
+#pro {
+    z-index: 1;
+}
+
+.card {
+    background: var(--color-light-gray);
+    border-radius: 0;
+}
+
+.card span {
+    font-size: 13px;
+    color: white;
+    background: var(--color-action);
+}
+
+.card h4 {
+    color: var(--color-dark-grey);
+}
+
+.card h1 {
+    color: var(--color-action);
+}
+
+.card ul {
+    color: #545454;
+}
+
+footer {
+    color: var(--color-white);
+    background: var(--color-dark-grey);
+}
+
+.active {
+    border-bottom: 2px solid var(--color-action);
+}
