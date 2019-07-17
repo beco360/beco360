@@ -74,7 +74,7 @@
 }
 
 .navbar-brand {
-    color: #C0C0C0 !important;
+    color: var(--color-dark-grey) !important;
     font-size: 30px;
 }
 
