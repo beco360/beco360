@@ -5,6 +5,7 @@
     --color-dark-grey: #414141;
     --color-white: white;
     --color-action: #007bff;
+    --color-action-dark: #007bf0;
 }
 
 /* ICONOS */
@@ -84,6 +85,10 @@
 
 #btn-contact .btn:hover {
     color: var(--color-white);
+}
+
+.services strong {
+    color: var(--color-action-dark);
 }
 
 #title-services {
