@@ -1,11 +1,10 @@
 :root {
     --color-principal: #4FDDFA;
-    --color-secundary: #6CE2FB;
+    --color-secundary: #00b0d3;
+    --color-secundary-dark: #0096b4;
     --color-light-gray: #fafafa;
     --color-dark-grey: #414141;
     --color-white: white;
-    --color-action: #007bff;
-    --color-action-dark: #007bf0;
 }
 
 /* ICONOS */
@@ -70,8 +69,41 @@
 
 /* /ICONOS */
 
+a {
+    color: var(--color-secundary-dark);
+}
+
+a:hover {
+    color: var(--color-secundary-dark);
+}
+
+.btn-primary {
+    background: var(--color-secundary);
+    border: 1px solid var(--color-secundary);
+}
+
+.btn-outline-primary {
+    border: 1px solid var(--color-secundary);
+    color: var(--color-secundary-dark);
+}
+
+.active {
+    border-bottom: 2px solid var(--color-secundary);
+}
+
+.btn-primary:hover {
+    background: var(--color-secundary-dark);
+    border: 1px solid var(--color-secundary-dark);
+}
+.btn-outline-primary:hover {
+    color: var(--color-white);
+    background: var(--color-secundary-dark);
+    border: 1px solid var(--color-secundary-dark);
+}
+
 #navbar .btn {
-    color: var(--color-action);
+    color: var(--color-secundary);
+    border:1px solid var(--color-secundary);
 }
 
 .navbar-brand {
@@ -85,10 +117,11 @@
 
 #btn-contact .btn:hover {
     color: var(--color-white);
+    background: var(--color-secundary);
 }
 
 .services strong {
-    color: var(--color-action-dark);
+    color: var(--color-secundary-dark);
 }
 
 #title-services {
@@ -115,7 +148,7 @@
 .card span {
     font-size: 13px;
     color: white;
-    background: var(--color-action);
+    background: var(--color-secundary);
 }
 
 .card h4 {
@@ -123,20 +156,25 @@
 }
 
 .card h1 {
-    color: var(--color-action);
+    color: var(--color-secundary);
 }
 
 .card ul {
     color: #545454;
 }
 
-footer {
-    color: var(--color-white);
+#clients {
     background: var(--color-dark-grey);
 }
 
-.active {
-    border-bottom: 2px solid var(--color-action);
+#clients h2 {
+    background: var(--color-dark-grey);
+    color: var(--color-light-gray);
+}
+
+footer {
+    color: var(--color-light-gray);
+    background: var(--color-dark-grey);
 }
 
 #modalDemostracion iframe,
