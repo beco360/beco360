@@ -42,7 +42,8 @@
                     <a class="nav-link" href="#clients">Nuestros clientes</a>
                 </li> -->
                 <li id="btn-contact">
-                    <a href="#contact" class="btn btn-lg btn-outline-primary ml-4 nav-link">Contáctenos</a>
+                    <button class="btn btn-lg btn-outline-primary ml-4 nav-link" data-toggle="modal"
+                        data-target="#modalContact">Contáctenos</button>
                 </li>
             </ul>
         </div>
@@ -101,397 +102,454 @@
                 </div>
                 <div class="col">
                     <h2 class="text-muted">👇</h2>
-                    <a href="https://forms.gle/dAb6aNmZ7LWzWvw89" target="_blank" class="btn btn-primary btn-lg">Quiero
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalDemostracion">Quiero
                         ver mi
                         página en Internet gratuitamente</a>
 
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /SERVICES -->
+        <!-- /SERVICES -->
 
-    <!-- PRICING -->
-    <div id="pricing">
-        <div class="container">
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <!-- <h1 class="display-4">Precios</h1> -->
-                <p class="lead">Ahora bien, una vez tengas tu demostración gratuita, si te gusta, puedes obtener tu
-                    página Web con los siguientes planes y llevar a tu empresa al siguiente nivel</p>
-            </div>
-            <div class="row mb-3 text-center justify-content-center">
-                <div class="col-12 col-md-6  px-2">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Sencilla</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$15.32</s></small>
-                                $9.99</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    Modificaciones al contenido de la página
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    Re diseño a la página
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    Dominio personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="DWNWSLUY74RK2">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
-                                        </div>
-                                    </div>
-                                </div>
+        <!-- PRICING -->
+        <div id="pricing">
+            <div class="container">
+                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                    <!-- <h1 class="display-4">Precios</h1> -->
+                    <p class="lead">Ahora bien, una vez tengas tu demostración gratuita, si te gusta, puedes obtener tu
+                        página Web con los siguientes planes y llevar a tu empresa al siguiente nivel</p>
+                </div>
+                <div class="row mb-3 text-center justify-content-center">
+                    <div class="col-12 col-md-6  px-2">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="my-0 font-weight-normal">Versión Sencilla</h4>
+                                <h1 class="card-title pricing-card-title"><small
+                                        class="text-muted"><s>$15.32</s></small>
+                                    $9.99</h1>
+                                <small class="text-muted">USD/mes</small>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Página Web profesional
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Optimización de imágenes para la Web
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Hosting
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Soporte personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        Modificaciones al contenido de la página
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        Re diseño a la página
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        Dominio personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        30 GB de almacenamiento en la nube
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        Entorno corporativo Google Suite profesional
+                                    </li>
+                                </ul>
                                 <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                                     la
                                     empresa a la cual se le desarrollo tu demostración.</small>
-                                <input type="submit" class="btn btn-lg btn-block btn-outline-primary" name="submit"
-                                    value="Comenzar" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  px-2">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Básica</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$31.32</s></small>
-                                $18.99</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    2 modificaciones al contenido de la página (xMes)
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    1 Re diseño a la página
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Dominio personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
-                                    Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="JCZFL87NS8WTN">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                                    class="needs-validation" novalidate>
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="DWNWSLUY74RK2">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input type="text" name="os0" class="form-control text-center" id="company"
+                                                aria-describedby="help" placeholder="Nombre de tu empresa" required>
+                                            <div class="valid-feedback">
+                                                Se ve bien!
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <input type="submit" class="btn btn-lg btn-block btn-outline-primary" name="submit"
+                                        value="Comenzar" />
+                                </form>
+                                <small class="form-text text-muted">Al realizar la suscripción tambien estas aceptando
+                                    nuestros <a href="legal/terms.html">terminos y condiciones</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6  px-2">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="my-0 font-weight-normal">Versión Básica</h4>
+                                <h1 class="card-title pricing-card-title"><small
+                                        class="text-muted"><s>$31.32</s></small>
+                                    $18.99</h1>
+                                <small class="text-muted">USD/mes</small>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Página Web profesional
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Optimización de imágenes para la Web
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Hosting
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Soporte personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        2 modificaciones al contenido de la página (xMes)
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        1 Re diseño a la página
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Dominio personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        30 GB de almacenamiento en la nube
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/dash.svg" alt="Check" width="15" height="15">
+                                        Entorno corporativo Google Suite profesional
+                                    </li>
+                                </ul>
                                 <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                                     la
                                     empresa a la cual se le desarrollo tu demostración.</small>
-                                <input type="submit" class="btn btn-lg btn-block btn-outline-primary" name="submit"
-                                    value="Comenzar" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  px-2">
-                    <div id="pro" class="card mb-4 shadow-lg">
-                        <span class="p-1">Mejores Beneficios</span>
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Profesional</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$62.64</s></small>
-                                $29.99</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    10 modificaciones al contenido de la página (xMes)
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    1 Re diseño a la página
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Dominio personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    1 Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="E8AYC2B2A5K32">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                                    class="needs-validation" novalidate>
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="JCZFL87NS8WTN">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input type="text" name="os0" class="form-control text-center" id="company"
+                                                aria-describedby="help" placeholder="Nombre de tu empresa" required>
+                                            <div class="valid-feedback">
+                                                Se ve bien!
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <input type="submit" class="btn btn-lg btn-block btn-outline-primary" name="submit"
+                                        value="Comenzar" />
+                                </form>
+                                <small class="form-text text-muted">Al realizar la suscripción tambien estas aceptando
+                                    nuestros <a href="legal/terms.html">terminos y condiciones</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6  px-2">
+                        <div id="pro" class="card mb-4 shadow-lg">
+                            <span class="p-1">Mejores Beneficios</span>
+                            <div class="card-body">
+                                <h4 class="my-0 font-weight-normal">Versión Profesional</h4>
+                                <h1 class="card-title pricing-card-title"><small
+                                        class="text-muted"><s>$62.64</s></small>
+                                    $29.99</h1>
+                                <small class="text-muted">USD/mes</small>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Página Web profesional
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Optimización de imágenes para la Web
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Hosting
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Soporte personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        10 modificaciones al contenido de la página (xMes)
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        1 Re diseño a la página
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Dominio personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        1 Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        30 GB de almacenamiento en la nube
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Entorno corporativo Google Suite profesional
+                                    </li>
+                                </ul>
                                 <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                                     la
                                     empresa a la cual se le desarrollo tu demostración.</small>
-                                <input type="submit" class="btn btn-lg btn-block btn-primary" name="submit"
-                                    value="Reclama tu Web" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  px-2">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Avanzada</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$100.21</s></small>
-                                $60.52</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    10 modificaciones al contenido de la página (xMes)
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    1 Re diseño a la página
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Dominio personalizado
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    1 Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
-                                    Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="QTT92TVD54QA2">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                                    class="needs-validation" novalidate>
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="E8AYC2B2A5K32">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input type="text" name="os0" class="form-control text-center" id="company"
+                                                aria-describedby="help" placeholder="Nombre de tu empresa" required>
+                                            <div class="valid-feedback">
+                                                Se ve bien!
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <input type="submit" class="btn btn-lg btn-block btn-primary" name="submit"
+                                        value="Reclama tu Web" />
+                                </form>
+                                <small class="form-text text-muted">Al realizar la suscripción tambien estas aceptando
+                                    nuestros <a href="legal/terms.html">terminos y condiciones</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6  px-2">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="my-0 font-weight-normal">Versión Avanzada</h4>
+                                <h1 class="card-title pricing-card-title"><small
+                                        class="text-muted"><s>$100.21</s></small>
+                                    $60.52</h1>
+                                <small class="text-muted">USD/mes</small>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Página Web profesional
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Optimización de imágenes para la Web
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Hosting
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Soporte personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        10 modificaciones al contenido de la página (xMes)
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        1 Re diseño a la página
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Dominio personalizado
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        1 Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        30 GB de almacenamiento en la nube
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/check.png" alt="Check" width="15" height="15">
+                                        Entorno corporativo Google Suite profesional
+                                    </li>
+                                </ul>
                                 <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                                     la
                                     empresa a la cual se le desarrollo tu demostración.</small>
-                                <input type="submit" class="btn btn-lg btn-block btn-primary" name="submit"
-                                    value="Reclama tu Web" />
-                            </form>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                                    class="needs-validation" novalidate>
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="QTT92TVD54QA2">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input type="text" name="os0" class="form-control text-center" id="company"
+                                                aria-describedby="help" placeholder="Nombre de tu empresa" required>
+                                            <div class="valid-feedback">
+                                                Se ve bien!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btn btn-lg btn-block btn-primary" name="submit"
+                                        value="Reclama tu Web" />
+                                </form>
+                                <small class="form-text text-muted">Al realizar la suscripción tambien estas aceptando
+                                    nuestros <a href="legal/terms.html">terminos y condiciones</a></small>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h5><small>- Cada modificación adicional al contenido tiene un valor de 3 USD</small></h5>
-                <h5><small>- Cada correo empresarial adicional tiene un valor de $10 USD y incluye 30 GB
-                        adicionales de almacenamiento
-                        en la nube</small></h5>
-            </div>
-        </div>
-    </div>
-    <!-- /PRICING -->
-
-    <!-- CLIENTS -->
-    <div id="clients">
-
-    </div>
-    <!-- /CLIENTS -->
-
-    <!-- CONTACT -->
-    <div id="contact">
-        <A HREF="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=HQKCY78RPWHMG">
-            <IMG SRC="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_unsubscribe_LG.gif" BORDER="0">
-        </A>
-
-    </div>
-    <!-- /CONTACT -->
-
-    <!-- FOOTER -->
-    <footer class="pt-4 mt-md-5 pt-md-5 border-top">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12 col-lg">
-                    <h5>Contacto</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="mailto:team@beco360.com" class="text-muted"><i class="icon-mail">
-                                </i>team@beco360.com</a></li>
-                        <li><a href="https://wa.me/573508108761" target="_blank" class="text-muted"><i
-                                    class="icon-whatsapp"> </i>+57 310
-                                123000</a></li>
-                        <li><a href="tel:+573508108761" class="text-muted"><i class="icon-phone"> </i>+57 350
-                                8108761</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg">
-                    <h5>Redes Sociales</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="https://www.facebook.com/beco360digital" target="_blank" class="text-muted"><i
-                                    class="icon-facebook">
-                                </i>facebook.com/beco360digital</a></li>
-                        <li>
-                            <a href="https://www.instagram.com/beco360" target="_blank" class="text-muted"><i
-                                    class="icon-instagram">
-                                </i>instagram.com/beco360</a>
-                        </li>
-                        <li><a href="https://www.twitter.com/beco360digital" target="_blank" class="text-muted"><i
-                                    class="icon-twitter">
-                                </i>twitter.com/beco360digital </a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg">
-                    <h5>Sobre Nosotros</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
-                    </ul>
-                </div>
-                <div class="col-12">
-                    <img class="mb-2" src="./assets/brand/favicon.ico" alt="" width="24" height="24">
-                    <small class="mb-3 text-muted">Beco 360</small>
-                    <small class="d-block mb-3 text-muted">© 2019-2020</small>
+                    <h5><small>- Cada modificación adicional al contenido tiene un valor de 3 USD</small></h5>
+                    <h5><small>- Cada correo empresarial adicional tiene un valor de $10 USD y incluye 30 GB
+                            adicionales de almacenamiento
+                            en la nube</small></h5>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- /FOOTER -->
+        <!-- /PRICING -->
 
-    <!-- Optional JavaScript -->
-    <script src="./scripts/index.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <!-- CLIENTS -->
+        <div id="clients">
+
+        </div>
+        <!-- /CLIENTS -->
+
+        <!-- CONTACT -->
+        <div id="contact">
+            <A HREF="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=HQKCY78RPWHMG">
+                <IMG SRC="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_unsubscribe_LG.gif" BORDER="0">
+            </A>
+
+        </div>
+        <!-- /CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="pt-4 mt-md-5 pt-md-5 border-top">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 col-lg">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="mailto:team@beco360.com" class="text-muted"><i class="icon-mail">
+                                    </i>team@beco360.com</a></li>
+                            <li><a href="https://wa.me/573508108761" target="_blank" class="text-muted"><i
+                                        class="icon-whatsapp"> </i>+57 350 8108761</a></li>
+                            <li><a href="tel:+573508108761" class="text-muted"><i class="icon-phone"> </i>+57 350
+                                    8108761</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <h5>Redes Sociales</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="https://www.facebook.com/beco360digital" target="_blank" class="text-muted"><i
+                                        class="icon-facebook">
+                                    </i>facebook.com/beco360digital</a></li>
+                            <li>
+                                <a href="https://www.instagram.com/beco360" target="_blank" class="text-muted"><i
+                                        class="icon-instagram">
+                                    </i>instagram.com/beco360</a>
+                            </li>
+                            <li><a href="https://www.twitter.com/beco360digital" target="_blank" class="text-muted"><i
+                                        class="icon-twitter">
+                                    </i>twitter.com/beco360digital </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <h5>Sobre Nosotros</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="cultura.html">Cultura Beco 360</a></li>
+                            <li><a class="text-muted" href="legal/terms.html">Terminos y condiciones</a></li>
+                            <li><a class="text-muted" href="legal/privacy.html">Privacidad</a></li>
+                            <li><a class="text-muted" href="faqs.html">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <img class="mb-2" src="./assets/brand/favicon.ico" alt="" width="24" height="24">
+                        <small class="mb-3 text-muted">Beco 360</small>
+                        <small class="d-block mb-3 text-muted">© 2019-2020</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalDemostracion" tabindex="-1" role="dialog"
+            aria-labelledby="modalDemostracionTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeWSV4_iMhnyGYSU7IdnK6YLljLNbG521aDkv2vD-4GJpaSUw/viewform?embedded=true"
+                            frameborder="0" marginheight="0" marginwidth="0" class="w-100">Cargando…</iframe>
+
+                    </div>
+                    <div class="modal-footer">
+                        <p class="lead text-center">Nuestro <strong>Team Beco</strong> estará muy contento de desarrollar identidad digital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="modalConactTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSebs8ZNTResm-5gO-isBlI2beZM2_Fjgkcsae3hvLFvgFsYAg/viewform?embedded=true"
+                            frameborder="0" marginheight="0" marginwidth="0" class="w-100">Cargando…</iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="lead text-center">Para ver nuestros datos de contacto, FAQ's y medios de difusión, da
+                            <a href="#contact">click aquí</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /FOOTER -->
+
+        <!-- Optional JavaScript -->
+        <script src="./scripts/index.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

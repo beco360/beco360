@@ -139,6 +139,10 @@ footer {
     border-bottom: 2px solid var(--color-action);
 }
 
+#modalDemostracion iframe,
+#modalContact iframe  {
+    height: 70vh;
+}
 
 
 /* SUCCESS */
