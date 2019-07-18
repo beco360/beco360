@@ -93,7 +93,7 @@
 
 #title-services {
     color: var(--color-dark-grey);
-    margin: 20px 0 10px 0;
+    margin: 30px 0 40px 0;
 }
 
 .callto-demostration {
@@ -138,3 +138,12 @@ footer {
 .active {
     border-bottom: 2px solid var(--color-action);
 }
+
+
+
+/* SUCCESS */
+.success h2 {
+    color: #28a745;
+
+}
+/* /SUCCESS */
