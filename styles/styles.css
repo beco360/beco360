@@ -69,6 +69,16 @@
 
 /* /ICONOS */
 
+.lazyLoad {
+    width: 100%;
+    opacity: 0;
+}
+
+.visible {
+    transition: opacity 1000ms ease;
+    opacity: 1;
+}
+
 a {
     color: var(--color-secundary-dark);
 }
