@@ -87,10 +87,6 @@ a:hover {
     color: var(--color-secundary-dark);
 }
 
-.active {
-    border-bottom: 2px solid var(--color-secundary);
-}
-
 .btn-primary:hover {
     background: var(--color-secundary-dark);
     border: 1px solid var(--color-secundary-dark);
@@ -175,6 +171,10 @@ a:hover {
 footer {
     color: var(--color-light-gray);
     background: var(--color-dark-grey);
+}
+
+.active {
+    border-bottom: 2px solid var(--color-secundary);
 }
 
 #modalDemostracion iframe,
