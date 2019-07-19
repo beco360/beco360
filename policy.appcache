@@ -3,7 +3,7 @@ CACHE MANIFEST
 # Esto es un comentario.
 index.html
 styles/styles.css
-scripts/scripts.css
+scripts/index.js
 assets/brand/Logo.png
 assets/brand/hero.webp
 assets/brand/favicon.ico

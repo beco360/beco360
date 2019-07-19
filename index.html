@@ -656,6 +656,18 @@
         <!-- /FOOTER -->
 
         <!-- Optional JavaScript -->
+        <!-- CACHE -->
+        <script>
+            function onUpdateReady() {
+                alert('found new version!');
+            }
+            window.applicationCache.addEventListener('updateready', onUpdateReady);
+            if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+                onUpdateReady();
+            }
+        </script>
+
+
         <script async src="./scripts/index.js"></script>
         <script async src="//code.jivosite.com/widget.js" jv-id="DK9vKgsPm5" async></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
