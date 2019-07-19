@@ -1,14 +1,9 @@
 CACHE MANIFEST
 # v1 - 2011-08-13
 # Esto es un comentario.
-https://www.beco360.com/
-https://www.beco360.com/index.html
-https://www.beco360.com/assets/brand/Logo.png
-https://www.beco360.com/assets/brand/hero.webp
-https://www.beco360.com/assets/icons/icomoon.ttf?flb6mo
-https://www.beco360.com/assets/brand/favicon.ico
-https://www.beco360.com/styles/styles.css
-https://www.beco360.com/scripts/index.js
-http://code.jivosite.com/
-http://cdn-ca.jivosite.com/
-http://cdn.jsdelivr.net/
+index.html
+styles/styles.css
+scripts/scripts.css
+assets/brand/Logo.png
+assets/brand/hero.webp
+assets/brand/favicon.ico
