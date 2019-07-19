@@ -14,12 +14,9 @@
     <link rel="stylesheet" href="./styles/styles.css" />
 
     <title>Beco 360</title>
-    <script async src="//code.jivosite.com/widget.js" jv-id="DK9vKgsPm5"></script>
-</head>
 
-<body data-spy="scroll" data-target="#general-navbar" data-offset="106">
     <!-- CACHE -->
-    <!--<script>
+    <script defer>
         function onUpdateReady() {
             alert('found new version!');
         }
@@ -27,7 +24,10 @@
         if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
             onUpdateReady();
         }
-    </script>-->
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#general-navbar" data-offset="106">
 
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="general-navbar">
@@ -666,18 +666,17 @@
         <!-- /FOOTER -->
 
         <!-- Optional JavaScript -->
+
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" defer></script>
         <script src="./scripts/index.js" defer></script>
+        <script src="//code.jivosite.com/widget.js" jv-id="DK9vKgsPm5" async></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>
 </body>
 
 </html>
