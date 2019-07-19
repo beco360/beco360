@@ -6,3 +6,7 @@ scripts/index.js
 assets/brand/Logo.png
 assets/brand/hero.webp
 assets/brand/favicon.ico
+
+# Usar desde la red si está disponible
+NETWORK:
+code.jivosite.com/widget.js
