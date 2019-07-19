@@ -8,11 +8,20 @@
 }
 
 /* ICONOS */
-
+/*
 @font-face {
     font-family: 'icomoon';
     src: url('../assets/icons/icomoon.eot?flb6mo');
     src: url('../assets/icons/icomoon.eot?flb6mo#iefix') format('embedded-opentype'), url('../assets/icons/icomoon.ttf?flb6mo') format('truetype'), url('../assets/icons/icomoon.woff?flb6mo') format('woff'), url('../assets/icons/icomoon.svg?flb6mo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/icons/icomoon.woff?flb6mo') format('woff');
     font-weight: normal;
     font-style: normal;
 }
