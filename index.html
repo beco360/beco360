@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css" />
-
-    <script src="//code.jivosite.com/widget.js" jv-id="DK9vKgsPm5" async></script>
 </head>
 
 <body data-spy="scroll" data-target="#general-navbar" data-offset="106">
@@ -650,8 +648,14 @@
     <!-- /MODALS -->
 
     <!-- JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" defer></script>
-    <script src="./scripts/index.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+        const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+        observer.observe();
+    </script>
+
+
+    <script src="./scripts/index.js" async></script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -663,7 +667,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
         defer></script>
-    <!--<script>
+
+    <script src="//code.jivosite.com/widget.js" jv-id="DK9vKgsPm5" async></script>
+    <script>
         function onUpdateReady() {
             alert('Encontramos una nueva versión!');
         }
@@ -671,7 +677,7 @@
         if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
             onUpdateReady();
         }
-    </script>-->
+    </script>
     <!-- /JS -->
 </body>
 
