@@ -145,11 +145,11 @@ a:hover {
     margin: 30px 0 40px 0;
 }
 
-.services .container-fluid {
+#steps {
     background: var(--color-dark-grey);
 }
 
-.steps strong {
+#steps strong {
     color: var(--color-dark-grey);
 }
 
@@ -216,6 +216,7 @@ footer {
     margin-bottom: 3.125em;
     background: var(--color-light-gray);
 }
+
 /* /STEPS */
 
 /* SUCCESS */
