@@ -1,3 +1,18 @@
+
+// LAZY LOAD
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
+// OFFSET STICKY TOP
+function offsetAnchor() {
+    if(location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 110);
+    }
+}
+window.addEventListener("hashchange", offsetAnchor);
+
+window.setTimeout(offsetAnchor, 1);
+
 function validate() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation');

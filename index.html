@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
-<body data-spy="scroll" data-target="#general-navbar" data-offset="106">
+<body data-spy="scroll" data-target="#general-navbar" data-offset="110">
 
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="general-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top sticky-offset" id="general-navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets/brand/Logo.png" alt="Logo Beco 360" width="80" height="80">
@@ -30,11 +30,17 @@
 
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Precios</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#marca">Identidad de marca</a>
+                            <a class="dropdown-item" href="#web">Página Web</a>
+                            <a class="dropdown-item" href="#contenido">Contenido</a>
+                            <a class="dropdown-item" href="#marketing">Marketing</a>
+                        </div>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link" href="#clients">Nuestros clientes</a>
@@ -65,479 +71,149 @@
                         de
                         una forma efectiva.
                     </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img data-src="./assets/brand/hero.webp" alt="web" class="img-fluid mb-3 lozad">
-                </div>
-                <div class="col-12">
                     <p class="lead">
                         Esta comprobado que los clientes <strong>buscan y indagan</strong> en la Web antes de tomar
                         una
                         decisión de
-                        compra o de conversión. ¿Quieres que tu marca o producto <strong>este presente</strong>
+                        compra o de conversión y la pregunta realmente es: ¿Quieres que tu marca o producto <strong>este
+                            presente</strong>
                         cuando
                         un usuario
-                        investigue por la Web?
+                        investigue por la red?
                     </p>
                     <p class="lead">
                         Tener presencia digital efectiva impulsa la confianza y la fidelización de tus clientes,
                         aumentando así tu porcentaje de conversión.
                     </p>
-                    <p class="lead">
-                        Además de los nombrados, son múltiples los beneficios que conlleva estar en Internet, así
-                        que
-                        ¿por qué no solicitarnos una demostración de como tu empresa puede adentrarse en este nuevo
-                        mundo totalmente gratis?... ¡SI! leíste bien, puedes solicitarnos una demostración
-                        <strong>totalmente gratis.</strong>
-                    </p>
                 </div>
-                <br>
-            </div>
-            <div class="row callto-demostration text-center">
-                <div class="col">
-                    <h2 id="solicitud-demostración">¿Te gustaría ver como se vería tu
-                        empresa en Internet?, solicita YA una demostración gratuita</h2>
-
-                </div>
-                <div class="col">
-                    <h2 class="text-muted">👇</h2>
-                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalDemostracion">Quiero
-                        ver mi
-                        página en Internet gratuitamente</a>
-
-                    </button>
+                <div class="col-12 col-lg-6">
+                    <img data-src="./assets/brand/hero.png" alt="web" class="img-fluid mb-3 lozad">
                 </div>
             </div>
         </div>
+        <!-- STEPS -->
+        <div class="container-fluid p-5">
+            <div class="steps container">
+                <div class="col-12">
+                    <p class="h4 mb-5 text-center text-light">
+                        A continuación te contamos los servicios con los cuales podrás impulsar tu crecimiento
+                        empresarial y llevar tu negocio a otro nivel:
+                    </p>
+                </div>
+                <div class="text-element content-element circles-list text-justify">
+                    <ol>
+                        <li id="marca" class="shadow-lg p-5 rounded">
+                            <p class="lead"><strong>Identidad de marca...</strong></p>
+                            <div class="row" class>
+                                <div class="col-12 col-lg-6">
+                                    <p class="lead">
+                                        Por medio de la identidad de marca vas a destacar los valores y la misión de tu
+                                        negocio.
+                                        Es el conglomerado de logos, diseños, plantillas y ética de la compañía; todos
+                                        forman parte de tu marca. Con este conjunto de elementos visuales y físicos
+                                        puedes crear una impresión positiva en tus clientes.
+                                    </p>
+                                    <p class="lead">Una identidad de marca fuerte es la base para un futuro exitoso. No
+                                        te
+                                        preocupes por nada
+                                        de esto, nosotros nos encargamos por ti.</p>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img src="./assets/services/brand.webp" alt="Identidad de marca"
+                                        class="img-fluid mb-3 lozad">
+                                </div>
+                                <a href="servicios/identidad-marca.html" class="btn btn-primary btn-block btn-lg">Más
+                                    información</a>
+                            </div>
+                        </li>
+                        <li id="web" class="shadow-lg p-5 rounded">
+                            <p class="lead"><strong>Debes tener una página Web, es muy importante...</strong></p>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <p class="lead">
+                                        Una página es la vitrina de tus productos o servicios, por medio de esta podrás
+                                        explicarle a tu consumidor que es lo que le estas ofreciendo y posteriormente
+                                        solicitarle un pago final. Sin una Web, el embudo de ventas pierde mucho
+                                        valor y tu modelo de negocio se vería afectado. Adicional a esto, en múltiples
+                                        ocasiones
+                                        te pueden solicitar dicho recurso y el no tenerlo puede causar una disminución
+                                        en la
+                                        fidelidad de tus clientes.
+                                    </p>
+                                    <p class="lead">Además de los nombrados, son múltiples los beneficios que conlleva
+                                        estar
+                                        en
+                                        Internet, así que ¿por qué no solicitarnos una demostración gratuita de como se
+                                        vería tu negocio en Internet?... ¡SI! leíste bien, puedes
+                                        solicitarnos una demostración totalmente gratis.</p>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img src="./assets/services/web.webp" alt="Página Web" class="img-fluid mb-3 lozad">
+                                </div>
+                                <a href="servicios/paginas-web.html" class="btn btn-primary btn-block btn-lg">Más
+                                    información</a>
+                            </div>
+                        </li>
+                        <li id="contenido" class="shadow-lg p-5 rounded">
+                            <p class="lead"><strong>El contenido será una herramienta fundamental para darte a
+                                    conocer...</strong></p>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <p class="lead">
+                                        Teniendo una Web y una identidad de marca establecida, el contenido es el paso a
+                                        seguir para que tu negocio se empiece a posicionar en el maravilloso mundo del
+                                        Internet. La distribución de
+                                        textos,
+                                        videos, imágenes y experiencias de una forma efectiva es lo que diferencia una
+                                        empresa tradicional de una convencional.
+                                    </p>
+                                    <p class="lead">Nosotros nos encargamos de crear dicho contenido para
+                                        impactar correcta y positivamente en tus prospectos de ventas. No te
+                                        preocupes por nada, nosotros te asesoramos en la creación de tus redes sociales,
+                                        cuentas y demás requerimientos previos para iniciar la distribución</p>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img src="./assets/services/content.webp" alt="Contenido"
+                                        class="img-fluid mb-3 lozad">
+                                </div>
+                                <a href="servicios/contenido.html" class="btn btn-primary btn-block btn-lg">Más
+                                    información</a>
+                            </div>
+                        </li>
+                        <li id="marketing" class="shadow-lg p-5 rounded">
+                            <p class="lead"><strong>Inbound y Outbound Marketing...</strong></p>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <p class="lead">
+                                        Teniendo una página Web, mucho contenido por distribuir y una identidad de marca
+                                        establecida, hacer marketing es el paso a seguir para que millones y millones de
+                                        personas te conozcan. En este punto estarías entrando al siguiente nivel, un
+                                        nivel
+                                        en el que las posibilidades son infinitas y el crecimiento puede llegar a ser
+                                        exponencial.
+                                    </p>
+                                    <p class="lead">Nosotros nos encargamos de distribuir y publicitar efectivamente
+                                        todo el
+                                        contenido de tu empresa, para que así tu tiempo quede liberado y lo puedas
+                                        gastar en
+                                        otras áreas de tu compañía.</p>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img src="./assets/services/marketing.webp" alt="Marketing"
+                                        class="img-fluid mb-3 lozad">
+                                </div>
+                                <a href="servicios/marketing.html" class="btn btn-primary btn-block btn-lg">Más
+                                    información</a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- /STEPS -->
     </div>
     <!-- /SERVICES -->
 
-    <!-- PRICING -->
-    <div id="pricing">
-        <div class="container">
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <p class="lead">Ahora bien, una vez tengas tu demostración gratuita, si te gusta, puedes alquilar tu
-                    página Web con los siguientes planes y llevar a tu empresa al siguiente nivel</p>
-            </div>
-            <div class="row mb-3 text-center justify-content-center">
-                <div class="col-12 col-md-6  px-2">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Sencilla</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$15.32</s></small>
-                                $9.99</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Certificado de seguridad SSL (Sitio seguro HTTPS)
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad"> Modificaciones al contenido de la página
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad"> Re diseño a la página
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad"> Dominio personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad">Correo electrónico empresarial
-                                    <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad">30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad">Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
-                                la
-                                empresa a la cual se le desarrollo tu demostración.</small>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="DWNWSLUY74RK2">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
-                                            required>
-                                        <label class="form-check-label" for="invalidCheck">
-                                            <small class="form-text text-muted">He leído y acepto las <a
-                                                    href="legal/use.htlm">Condiciones de Uso</a>, el Aviso
-                                                de <a href="legal/privacy.html">Privacidad</a> de PayPal y cualquier
-                                                otra
-                                                política presente en los <a href="legal/terms.html">Términos y
-                                                    Condiciones</a> de PayPal.</small>
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Para adquirir los servicios de <strong>Beco 360</strong> debes aceptar
-                                            los terminos
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="submit" class="btn btn-lg btn-block btn-outline-primary"
-                                    onclick="validate()" name="submit" value="Comenzar" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  px-2">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Básica</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$31.32</s></small>
-                                $21.99</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Certificado de seguridad SSL (Sitio seguro HTTPS)
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    2 modificaciones al contenido de la página (xMes)
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    1 Re diseño a la página
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Dominio personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad">Correo electrónico empresarial
-                                    <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad">30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/dash.svg" alt="Check" width="15" height="15"
-                                        class="lozad">Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
-                                la
-                                empresa a la cual se le desarrollo tu demostración.</small>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="JCZFL87NS8WTN">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
-                                            required>
-                                        <label class="form-check-label" for="invalidCheck">
-                                            <small class="form-text text-muted">He leído y acepto las <a
-                                                    href="legal/use.htlm">Condiciones de Uso</a>, el Aviso
-                                                de <a href="legal/privacy.html">Privacidad</a> de PayPal y cualquier
-                                                otra
-                                                política presente en los <a href="legal/terms.html">Términos y
-                                                    Condiciones</a> de PayPal.</small>
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Para adquirir los servicios de <strong>Beco 360</strong> debes aceptar
-                                            los terminos
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="submit" class="btn btn-lg btn-block btn-outline-primary"
-                                    onclick="validate()" name="submit" value="Comenzar" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  px-2">
-                    <div id="pro" class="card mb-4 shadow-lg">
-                        <span class="p-1">Mejores Beneficios</span>
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Profesional</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$62.64</s></small>
-                                $29.99</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Certificado de seguridad SSL (Sitio seguro HTTPS)
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    10 modificaciones al contenido de la página (xMes)
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    1 Re diseño a la página
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Dominio personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    1 Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
-                                la
-                                empresa a la cual se le desarrollo tu demostración.</small>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="E8AYC2B2A5K32">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
-                                            required>
-                                        <label class="form-check-label" for="invalidCheck">
-                                            <small class="form-text text-muted">He leído y acepto las <a
-                                                    href="legal/use.htlm">Condiciones de Uso</a>, el Aviso
-                                                de <a href="legal/privacy.html">Privacidad</a> de PayPal y cualquier
-                                                otra
-                                                política presente en los <a href="legal/terms.html">Términos y
-                                                    Condiciones</a> de PayPal.</small>
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Para adquirir los servicios de <strong>Beco 360</strong> debes aceptar
-                                            los terminos
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="submit" class="btn btn-lg btn-block btn-primary" onclick="validate()"
-                                    name="submit" value="Comenzar" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6  px-2">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h4 class="my-0 font-weight-normal">Versión Avanzada</h4>
-                            <h1 class="card-title pricing-card-title"><small class="text-muted"><s>$100.21</s></small>
-                                $60.99</h1>
-                            <small class="text-muted">USD/mes</small>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Página Web profesional
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Optimización de imágenes para la Web
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Hosting
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Certificado de seguridad SSL (Sitio seguro HTTPS)
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Soporte personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    50 modificaciones al contenido de la página (xMes)
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    1 Re diseño a la página
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Dominio personalizado
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    1 Correo electrónico empresarial <small>(ejemplo@tuempresa.com)</small>
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    30 GB de almacenamiento en la nube
-                                </li>
-                                <li>
-                                    <img data-src="./assets/icons/check.webp" alt="Check" width="15" height="15"
-                                        class="lozad">
-                                    Entorno corporativo Google Suite profesional
-                                </li>
-                            </ul>
-                            <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
-                                la
-                                empresa a la cual se le desarrollo tu demostración.</small>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                                class="needs-validation" novalidate>
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="QTT92TVD54QA2">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="os0" class="form-control text-center" id="company"
-                                            aria-describedby="help" placeholder="Nombre de tu empresa" required>
-                                        <div class="valid-feedback">
-                                            Se ve bien!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
-                                            required>
-                                        <label class="form-check-label" for="invalidCheck">
-                                            <small class="form-text text-muted">He leído y acepto las <a
-                                                    href="legal/use.htlm">Condiciones de Uso</a>, el Aviso
-                                                de <a href="legal/privacy.html">Privacidad</a> de PayPal y cualquier
-                                                otra
-                                                política presente en los <a href="legal/terms.html">Términos y
-                                                    Condiciones</a> de PayPal.</small>
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Para adquirir los servicios de <strong>Beco 360</strong> debes aceptar
-                                            los terminos
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="submit" class="btn btn-lg btn-block btn-outline-primary"
-                                    onclick="validate()" name="submit" value="Comenzar" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <h5><small>- Cada modificación adicional al contenido tiene un valor de 3 USD</small></h5>
-                <h5><small>- Cada correo empresarial adicional tiene un valor de $10 USD y incluye 30 GB
-                        adicionales de almacenamiento
-                        en la nube</small></h5>
-            </div>
-        </div>
-    </div>
-    <!-- /PRICING -->
 
     <!-- CLIENTS -->
     <div id="clients" class="py-5">
@@ -552,15 +228,17 @@
                             <p class="h4 lead">Ingenieros AB</p>
                         </a>
                         <p class="card-text"><strong>Area:</strong> Civil</p>
+                        <p class="card-text"><strong>Servicios:</strong> Página Web</p>
                     </div>
                 </div>
                 <div class="card col-12 col-md-6">
-                    <img data-src="./assets/clients/Ingenieros AB.webp" class="card-img-top lozad" alt="Ingenieros AB">
+                    <img data-src="./assets/clients/lsj.webp" class="card-img-top lozad" alt="Ingenieros AB">
                     <div class="card-body">
-                        <a href="https://sanep10.github.io/ingab/" target="_blank">
-                            <p class="h4 lead">Ingenieros AB</p>
+                        <a href="https://www.facebook.com/lsjsas/" target="_blank">
+                            <p class="h4 lead">LSJ</p>
                         </a>
-                        <p class="card-text"><strong>Area:</strong> Civil</p>
+                        <p class="card-text"><strong>Area:</strong> Ecommerce</p>
+                        <p class="card-text"><strong>Servicios:</strong> Marketing</p>
                     </div>
                 </div>
                 <a href="#" class="btn btn-primary btn-block">Ver más</a>
@@ -572,6 +250,17 @@
     <!-- FOOTER -->
     <footer id="contact" class="pt-4 pt-md-5">
         <div class="container">
+            <div class="row text-center mt-2 mb-5">
+                <div class="col-12">
+                    <h2>¿Tienes alguna inquietud?, ¿Necesitas de algún otro servicio?</h2>
+                </div>
+                <div class="col-12">
+                    <h2 class="text-muted">👇</h2>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContact">Contáctate
+                        con nosotros</a>
+                    </button>
+                </div>
+            </div>
             <div class="row text-center">
                 <div class="col-12 col-lg">
                     <h5>Contacto</h5>
@@ -604,7 +293,7 @@
                     <h5>Sobre Nosotros</h5>
                     <ul class="list-unstyled text-small">
                         <li><a class="text-muted" href="cultura.html">Cultura Beco 360</a></li>
-                        <li><a class="text-muted" href="legal/terms.html">Terminos y condiciones</a></li>
+                        <li><a class="text-muted" href="legal/terms.html">Términos y condiciones</a></li>
                         <li><a class="text-muted" href="legal/privacy.html">Privacidad</a></li>
                         <li><a class="text-muted" href="faqs.html">FAQ's</a></li>
                     </ul>
@@ -620,29 +309,6 @@
     <!-- /FOOTER -->
 
     <!-- MODALS -->
-    <div class="modal fade" id="modalDemostracion" tabindex="-1" role="dialog" aria-labelledby="modalDemostracionTitle"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-label="Close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <iframe
-                        data-src="https://docs.google.com/forms/d/e/1FAIpQLSeWSV4_iMhnyGYSU7IdnK6YLljLNbG521aDkv2vD-4GJpaSUw/viewform?embedded=true"
-                        frameborder="0" marginheight="0" marginwidth="0" class="w-100 lozad">Cargando…</iframe>
-
-                </div>
-                <div class="modal-footer">
-                    <p class="lead text-center">Nuestro <strong>Team Beco</strong> estará muy contento de
-                        desarrollar identidad digital.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="modalConactTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -668,15 +334,7 @@
 
     <!-- JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    <script>
-        const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-        observer.observe();
-    </script>
-
-
     <script src="./scripts/index.js" async></script>
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
