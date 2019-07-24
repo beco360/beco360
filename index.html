@@ -19,7 +19,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -33,6 +33,17 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1333394283480495&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144506037-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144506037-1');
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#general-navbar" data-offset="110">
@@ -288,7 +299,7 @@
                 <div class="col-12 col-lg">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a href="mailto:team@beco360.com" class="text-muted"><i class="icon-mail">
+                        <li><a href="mailto:team@beco360.com" class="text-muted" target="_blank"><i class="icon-mail">
                                 </i>team@beco360.com</a></li>
                         <li><a href="https://wa.me/573508108761" target="_blank" class="text-muted"><i
                                     class="icon-whatsapp"> </i>+57 350 8108761</a></li>
