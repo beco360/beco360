@@ -12,6 +12,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css" />
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1333394283480495');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1333394283480495&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body data-spy="scroll" data-target="#general-navbar" data-offset="110">
@@ -149,7 +170,8 @@
                                         solicitarnos una demostración totalmente gratis.</p>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <img data-src="./assets/services/web.webp" alt="Página Web" class="img-fluid mb-3 lozad">
+                                    <img data-src="./assets/services/web.webp" alt="Página Web"
+                                        class="img-fluid mb-3 lozad">
                                     <a href="servicios/paginas-web.html" class="btn btn-primary btn-block btn-lg">Más
                                         información</a>
                                 </div>
