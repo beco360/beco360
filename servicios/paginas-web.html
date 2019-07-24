@@ -5,13 +5,45 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/brand/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/brand/favicon.ico" />
     <title>Beco 360</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1333394283480495');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1333394283480495&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144506037-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144506037-1');
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#general-navbar" data-offset="110">
@@ -19,8 +51,8 @@
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top sticky-offset" id="general-navbar">
         <div class="container">
-            <a class="navbar-brand" href="../index.html#">
-                <img src="../assets/brand/Logo.png" alt="Logo Beco 360" width="80" height="80">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/brand/Logo.png" alt="Logo Beco 360" width="80" height="80">
                 <strong>Beco</strong> 360
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
@@ -31,19 +63,19 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="../index.html" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Servicios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../index.html#marca">Identidad de marca</a>
-                            <a class="dropdown-item" href="../index.html#web">Página Web</a>
-                            <a class="dropdown-item" href="../index.html#contenido">Contenido</a>
-                            <a class="dropdown-item" href="../index.html#marketing">Marketing</a>
+                            <a class="dropdown-item" href="#marca">Identidad de marca</a>
+                            <a class="dropdown-item" href="#web">Página Web</a>
+                            <a class="dropdown-item" href="#contenido">Contenido</a>
+                            <a class="dropdown-item" href="#marketing">Marketing</a>
                         </div>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="../index.html#clients">Nuestros clientes</a>
+                        <a class="nav-link" href="#clients">Nuestros clientes</a>
                     </li>
                     <li id="btn-contact">
                         <button class="btn btn-lg btn-outline-primary btn-block nav-link" data-toggle="modal"
@@ -543,14 +575,14 @@
                 <div class="col-12 col-lg">
                     <h5>Sobre Nosotros</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="../cultura.html">Cultura Beco 360</a></li>
-                        <li><a class="text-muted" href="../legal/terms.html">Términos y condiciones</a></li>
-                        <li><a class="text-muted" href="../legal/privacy.html">Privacidad</a></li>
-                        <li><a class="text-muted" href="../faqs.html">FAQ's</a></li>
+                        <li><a class="text-muted" href="cultura.html">Cultura Beco 360</a></li>
+                        <li><a class="text-muted" href="legal/terms.html">Términos y condiciones</a></li>
+                        <li><a class="text-muted" href="legal/privacy.html">Privacidad</a></li>
+                        <li><a class="text-muted" href="faqs.html">FAQ's</a></li>
                     </ul>
                 </div>
                 <div class="col-12">
-                    <img class="mb-2" src="../assets/brand/favicon.ico" alt="" width="24" height="24">
+                    <img class="mb-2" src="./assets/brand/favicon.ico" alt="" width="24" height="24">
                     <small class="mb-3 text-muted">Beco 360</small>
                     <small class="d-block mb-3 text-muted">© 2019-2020</small>
                 </div>
@@ -608,7 +640,7 @@
 
     <!-- JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    <script src="../scripts/index.js" async></script>
+    <script src="./scripts/index.js" async></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
