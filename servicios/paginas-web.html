@@ -114,7 +114,7 @@
                         <a class="nav-link" href="https://www.beco360.com/index.html#clients">Nuestros clientes</a>
                     </li>
                     <li id="btn-contact">
-                        <button class="botonContactar btn btn-lg btn-outline-primary btn-block nav-link"
+                        <button id="botonContactar" class="btn btn-lg btn-outline-primary btn-block nav-link"
                             data-toggle="modal" data-target="#modalContact">Contáctenos</button>
                     </li>
                 </ul>
@@ -578,7 +578,7 @@
                 </div>
                 <div class="col-12">
                     <h2 class="text-muted">👇</h2>
-                    <button class="botonContactar btn btn-primary btn-lg" data-toggle="modal"
+                    <button id="botonContactar" class="btn btn-primary btn-lg" data-toggle="modal"
                         data-target="#modalContact">Contáctate
                         con nosotros</a>
                     </button>
@@ -588,11 +588,11 @@
                 <div class="col-12 col-lg">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a href="mailto:team@beco360.com" class="botonContactar text-muted"><i class="icon-mail">
+                        <li><a href="mailto:team@beco360.com" id="botonContactar" class="text-muted"><i class="icon-mail">
                                 </i>team@beco360.com</a></li>
-                        <li><a href="https://wa.me/573508108761" target="_blank" class="botonContactar text-muted"><i
+                        <li><a href="https://wa.me/573508108761" target="_blank" id="botonContactar" class="text-muted"><i
                                     class="icon-whatsapp"> </i>+57 350 8108761</a></li>
-                        <li><a href="tel:+573508108761" class="botonContactar text-muted"><i class="icon-phone"> </i>+57
+                        <li><a href="tel:+573508108761" id="botonContactar" class="text-muted"><i class="icon-phone"> </i>+57
                                 350
                                 8108761</a></li>
                     </ul>
@@ -681,7 +681,7 @@
     <!-- /MODALS -->
 
     <script type="text/javascript">
-        document.getElementsByClassName('botonContactar').addEventListener('click', function () {
+        document.getElementById('botonContactar').addEventListener('click', function () {
             fbq('track', 'Contact');
         }, false);
     </script>
