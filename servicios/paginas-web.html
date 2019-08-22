@@ -210,7 +210,7 @@
                         <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                             la
                             empresa a la cual se le desarrollo tu demostración.</small>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                        <form id="pagarVSencilla" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
                             class="needs-validation" novalidate>
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="DWNWSLUY74RK2">
@@ -241,7 +241,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" id="pagarVSencilla" class="btn btn-lg btn-block btn-outline-primary"
+                            <input type="submit" class="btn btn-lg btn-block btn-outline-primary"
                                 onclick="validate()" name="submit" value="Comenzar" />
                             <script type="text/javascript">
                                 document.getElementById('pagarVSencilla').addEventListener('submit', function () {
@@ -312,7 +312,7 @@
                         <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                             la
                             empresa a la cual se le desarrollo tu demostración.</small>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                        <form id="pagarVBasica" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
                             class="needs-validation" novalidate>
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="JCZFL87NS8WTN">
@@ -343,7 +343,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" id="pagarVBasica" class="btn btn-lg btn-block btn-outline-primary"
+                            <input type="submit" class="btn btn-lg btn-block btn-outline-primary"
                                 onclick="validate()" name="submit" value="Comenzar" />
                             <script type="text/javascript">
                                 document.getElementById('pagarVBasica').addEventListener('submit', function () {
@@ -414,7 +414,7 @@
                         <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                             la
                             empresa a la cual se le desarrollo tu demostración.</small>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                        <form id="pagarVProfesional" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
                             class="needs-validation" novalidate>
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="E8AYC2B2A5K32">
@@ -445,7 +445,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" id="pagarVProfesional" class="btn btn-lg btn-block btn-primary"
+                            <input type="submit" class="btn btn-lg btn-block btn-primary"
                                 onclick="validate()" name="submit" value="Comenzar" />
                             <script type="text/javascript">
                                 document.getElementById('pagarVProfesional').addEventListener('submit', function () {
@@ -515,7 +515,7 @@
                         <small id="help" class="form-text text-muted">Importante que sea el mismo nombre de
                             la
                             empresa a la cual se le desarrollo tu demostración.</small>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
+                        <form id="pagarVAvanzada" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
                             class="needs-validation" novalidate>
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="QTT92TVD54QA2">
@@ -546,7 +546,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" id="pagarVAvanzada" class="btn btn-lg btn-block btn-outline-primary"
+                            <input type="submit" class="btn btn-lg btn-block btn-outline-primary"
                                 onclick="validate()" name="submit" value="Comenzar" />
                             <script type="text/javascript">
                                 document.getElementById('pagarVAvanzada').addEventListener('submit', function () {
@@ -578,7 +578,7 @@
                 </div>
                 <div class="col-12">
                     <h2 class="text-muted">👇</h2>
-                    <button id="botonContactar" class="btn btn-primary btn-lg" data-toggle="modal"
+                    <button id="botonContactar2" class="btn btn-primary btn-lg" data-toggle="modal"
                         data-target="#modalContact">Contáctate
                         con nosotros</a>
                     </button>
@@ -588,11 +588,13 @@
                 <div class="col-12 col-lg">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a href="mailto:team@beco360.com" id="botonContactar" class="text-muted"><i class="icon-mail">
+                        <li><a href="mailto:team@beco360.com" id="botonContactarMail" class="text-muted"><i
+                                    class="icon-mail">
                                 </i>team@beco360.com</a></li>
-                        <li><a href="https://wa.me/573508108761" target="_blank" id="botonContactar" class="text-muted"><i
-                                    class="icon-whatsapp"> </i>+57 350 8108761</a></li>
-                        <li><a href="tel:+573508108761" id="botonContactar" class="text-muted"><i class="icon-phone"> </i>+57
+                        <li><a href="https://wa.me/573508108761" target="_blank" id="botonContactarWha"
+                                class="text-muted"><i class="icon-whatsapp"> </i>+57 350 8108761</a></li>
+                        <li><a href="tel:+573508108761" id="botonContactarTel" class="text-muted"><i class="icon-phone">
+                                </i>+57
                                 350
                                 8108761</a></li>
                     </ul>
@@ -682,6 +684,18 @@
 
     <script type="text/javascript">
         document.getElementById('botonContactar').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactar2').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactarMail').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactarWha').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactarTel').addEventListener('click', function () {
             fbq('track', 'Contact');
         }, false);
     </script>

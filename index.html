@@ -105,8 +105,8 @@
                         <a class="nav-link" href="#clients">Nuestros clientes</a>
                     </li>
                     <li id="btn-contact">
-                        <button id="botonContactar" class="btn btn-lg btn-outline-primary btn-block nav-link" data-toggle="modal"
-                            data-target="#modalContact">Contáctenos</button>
+                        <button id="botonContactar" class="btn btn-lg btn-outline-primary btn-block nav-link"
+                            data-toggle="modal" data-target="#modalContact">Contáctenos</button>
                     </li>
                 </ul>
             </div>
@@ -325,7 +325,8 @@
                 </div>
                 <div class="col-12">
                     <h2 class="text-muted">👇</h2>
-                    <button id="botonContactar" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContact">Contáctate
+                    <button id="botonContactar2" class="btn btn-primary btn-lg" data-toggle="modal"
+                        data-target="#modalContact">Contáctate
                         con nosotros</a>
                     </button>
                 </div>
@@ -334,11 +335,13 @@
                 <div class="col-12 col-lg">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a href="mailto:team@beco360.com" id="botonContactar" class="text-muted" target="_blank"><i class="icon-mail">
+                        <li><a href="mailto:team@beco360.com" id="botonContactarMail" class="text-muted" target="_blank"><i
+                                    class="icon-mail">
                                 </i>team@beco360.com</a></li>
-                        <li><a href="https://wa.me/573508108761" target="_blank" id="botonContactar" class="text-muted"><i
-                                    class="icon-whatsapp"> </i>+57 350 8108761</a></li>
-                        <li><a href="tel:+573508108761" id="botonContactar" class="text-muted"><i class="icon-phone"> </i>+57 350
+                        <li><a href="https://wa.me/573508108761" target="_blank" id="botonContactarWha"
+                                class="text-muted"><i class="icon-whatsapp"> </i>+57 350 8108761</a></li>
+                        <li><a href="tel:+573508108761" id="botonContactarTel" class="text-muted"><i class="icon-phone">
+                                </i>+57 350
                                 8108761</a></li>
                     </ul>
                 </div>
@@ -406,6 +409,18 @@
 
     <script type="text/javascript">
         document.getElementById('botonContactar').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactar2').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactarMail').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactarWha').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+        document.getElementById('botonContactarTel').addEventListener('click', function () {
             fbq('track', 'Contact');
         }, false);
     </script>
