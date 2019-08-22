@@ -1,3 +1,9 @@
+<!-- 
+    EVENTOS FB:
+     - Page View
+     - Contact
+ -->
+
 <!doctype html>
 <html lang="es">
 
@@ -99,7 +105,7 @@
                         <a class="nav-link" href="#clients">Nuestros clientes</a>
                     </li>
                     <li id="btn-contact">
-                        <button class="btn btn-lg btn-outline-primary btn-block nav-link" data-toggle="modal"
+                        <button class="botonContactar btn btn-lg btn-outline-primary btn-block nav-link" data-toggle="modal"
                             data-target="#modalContact">Contáctenos</button>
                     </li>
                 </ul>
@@ -319,7 +325,7 @@
                 </div>
                 <div class="col-12">
                     <h2 class="text-muted">👇</h2>
-                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContact">Contáctate
+                    <button class="botonContactar btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContact">Contáctate
                         con nosotros</a>
                     </button>
                 </div>
@@ -328,11 +334,11 @@
                 <div class="col-12 col-lg">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a href="mailto:team@beco360.com" class="text-muted" target="_blank"><i class="icon-mail">
+                        <li><a href="mailto:team@beco360.com" class="botonContactar text-muted" target="_blank"><i class="icon-mail">
                                 </i>team@beco360.com</a></li>
-                        <li><a href="https://wa.me/573508108761" target="_blank" class="text-muted"><i
+                        <li><a href="https://wa.me/573508108761" target="_blank" class="botonContactar text-muted"><i
                                     class="icon-whatsapp"> </i>+57 350 8108761</a></li>
-                        <li><a href="tel:+573508108761" class="text-muted"><i class="icon-phone"> </i>+57 350
+                        <li><a href="tel:+573508108761" class="botonContactar text-muted"><i class="icon-phone"> </i>+57 350
                                 8108761</a></li>
                     </ul>
                 </div>
@@ -398,6 +404,11 @@
     </div>
     <!-- /MODALS -->
 
+    <script type="text/javascript">
+        document.getElementsByClassName('botonContactar').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+    </script>
 
     <!-- LOZAD -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>

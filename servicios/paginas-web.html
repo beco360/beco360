@@ -1,3 +1,13 @@
+<!-- 
+    EVENTOS FB:
+     - Page View
+     - Contact
+     - ContentView Pricing-PageWeb
+     - StartTrial WebGratis
+     - InitiateCheckout Sencilla, Basica, Profesional, Avanzada
+ -->
+
+
 <!doctype html>
 <html lang="es">
 
@@ -104,8 +114,8 @@
                         <a class="nav-link" href="https://www.beco360.com/index.html#clients">Nuestros clientes</a>
                     </li>
                     <li id="btn-contact">
-                        <button class="btn btn-lg btn-outline-primary btn-block nav-link" data-toggle="modal"
-                            data-target="#modalContact">Contáctenos</button>
+                        <button class="botonContactar btn btn-lg btn-outline-primary btn-block nav-link"
+                            data-toggle="modal" data-target="#modalContact">Contáctenos</button>
                     </li>
                 </ul>
             </div>
@@ -123,11 +133,18 @@
             </div>
             <div class="col">
                 <h2 class="text-muted">👇</h2>
-                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalDemostracion">Quiero
+                <button id="web-gratis" class="btn btn-primary btn-lg" data-toggle="modal"
+                    data-target="#modalDemostracion">Quiero
                     ver mi
                     página en Internet gratuitamente</a>
-
                 </button>
+                <script type="text/javascript">
+                    document.getElementById('web-gratis').addEventListener('click', function () {
+                        fbq('track', 'StartTrial', {
+                            subscription_id: 'web-gratis',
+                        });
+                    }, false);
+                </script>
             </div>
         </div>
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -224,8 +241,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" class="btn btn-lg btn-block btn-outline-primary" onclick="validate()"
-                                name="submit" value="Comenzar" />
+                            <input type="submit" id="pagarVSencilla" class="btn btn-lg btn-block btn-outline-primary"
+                                onclick="validate()" name="submit" value="Comenzar" />
+                            <script type="text/javascript">
+                                document.getElementById('pagarVSencilla').addEventListener('submit', function () {
+                                    fbq('track', 'InitiateCheckout', {
+                                        value: 9.99,
+                                        currency: 'usd',
+                                    });
+                                }, false);
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -318,8 +343,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" class="btn btn-lg btn-block btn-outline-primary" onclick="validate()"
-                                name="submit" value="Comenzar" />
+                            <input type="submit" id="pagarVBasica" class="btn btn-lg btn-block btn-outline-primary"
+                                onclick="validate()" name="submit" value="Comenzar" />
+                            <script type="text/javascript">
+                                document.getElementById('pagarVBasica').addEventListener('submit', function () {
+                                    fbq('track', 'InitiateCheckout', {
+                                        value: 21.99,
+                                        currency: 'usd',
+                                    });
+                                }, false);
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -412,8 +445,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" class="btn btn-lg btn-block btn-primary" onclick="validate()"
-                                name="submit" value="Comenzar" />
+                            <input type="submit" id="pagarVProfesional" class="btn btn-lg btn-block btn-primary"
+                                onclick="validate()" name="submit" value="Comenzar" />
+                            <script type="text/javascript">
+                                document.getElementById('pagarVProfesional').addEventListener('submit', function () {
+                                    fbq('track', 'InitiateCheckout', {
+                                        value: 29.99,
+                                        currency: 'usd',
+                                    });
+                                }, false);
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -505,8 +546,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="submit" class="btn btn-lg btn-block btn-outline-primary" onclick="validate()"
-                                name="submit" value="Comenzar" />
+                            <input type="submit" id="pagarVAvanzada" class="btn btn-lg btn-block btn-outline-primary"
+                                onclick="validate()" name="submit" value="Comenzar" />
+                            <script type="text/javascript">
+                                document.getElementById('pagarVAvanzada').addEventListener('submit', function () {
+                                    fbq('track', 'InitiateCheckout', {
+                                        value: 60.99,
+                                        currency: 'usd',
+                                    });
+                                }, false);
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -529,7 +578,8 @@
                 </div>
                 <div class="col-12">
                     <h2 class="text-muted">👇</h2>
-                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalContact">Contáctate
+                    <button class="botonContactar btn btn-primary btn-lg" data-toggle="modal"
+                        data-target="#modalContact">Contáctate
                         con nosotros</a>
                     </button>
                 </div>
@@ -538,11 +588,12 @@
                 <div class="col-12 col-lg">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a href="mailto:team@beco360.com" class="text-muted"><i class="icon-mail">
+                        <li><a href="mailto:team@beco360.com" class="botonContactar text-muted"><i class="icon-mail">
                                 </i>team@beco360.com</a></li>
-                        <li><a href="https://wa.me/573508108761" target="_blank" class="text-muted"><i
+                        <li><a href="https://wa.me/573508108761" target="_blank" class="botonContactar text-muted"><i
                                     class="icon-whatsapp"> </i>+57 350 8108761</a></li>
-                        <li><a href="tel:+573508108761" class="text-muted"><i class="icon-phone"> </i>+57 350
+                        <li><a href="tel:+573508108761" class="botonContactar text-muted"><i class="icon-phone"> </i>+57
+                                350
                                 8108761</a></li>
                     </ul>
                 </div>
@@ -628,6 +679,13 @@
         </div>
     </div>
     <!-- /MODALS -->
+
+    <script type="text/javascript">
+        document.getElementsByClassName('botonContactar').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+    </script>
+
 
     <!-- LOZAD -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
